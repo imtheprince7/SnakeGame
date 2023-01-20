@@ -9,7 +9,7 @@ import javax.swing.*;
 
 /**
  *
- * @author Rajpoot
+ * @author Prince kumar
  */
 
 public class SnakeFrame extends JFrame {
