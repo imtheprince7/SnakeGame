@@ -345,7 +345,6 @@ public class SnakePanel extends JPanel implements ActionListener{
 				}
 
 				break;
-
 			}
 
 		}
