@@ -9,8 +9,8 @@ import java.util.Random;
 
 public class SnakePanel extends JPanel implements ActionListener{
 
-	static final int SCREEN_WIDTH = 1300;
-	static final int SCREEN_HEIGHT = 750;
+	static final int SCREEN_WIDTH = 900;
+	static final int SCREEN_HEIGHT = 700;
 	static final int UNIT_SIZE = 50;
 	static final int GAME_UNITS = (SCREEN_WIDTH*SCREEN_HEIGHT)/(UNIT_SIZE*UNIT_SIZE);
 	static final int DELAY = 175;
@@ -224,14 +224,13 @@ public class SnakePanel extends JPanel implements ActionListener{
 		g.drawString("Game Over", (SCREEN_WIDTH - metrics2.stringWidth("Game Over"))/2, SCREEN_HEIGHT/2);
                 
                 
-                // created by ansh
                 g.setColor(Color.red);
 
 		g.setFont( new Font("Ink Free",Font.BOLD, 75));
 
 		FontMetrics metrics3 = getFontMetrics(g.getFont());
 
-		g.drawString("Created by Ansh Rajpoot", (SCREEN_WIDTH - metrics3.stringWidth("Ansh Rajpoot"))/3, SCREEN_HEIGHT/3);
+		g.drawString("Created by Prince Kumar", (SCREEN_WIDTH - metrics3.stringWidth("Prince Kumar"))/3, SCREEN_HEIGHT/3);
 
 	}
 
