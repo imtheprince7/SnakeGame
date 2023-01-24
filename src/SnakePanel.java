@@ -9,8 +9,8 @@ import java.util.Random;
 
 public class SnakePanel extends JPanel implements ActionListener{
 
-	static final int SCREEN_WIDTH = 900;
-	static final int SCREEN_HEIGHT = 700;
+	static final int SCREEN_WIDTH = 1050;
+	static final int SCREEN_HEIGHT = 600;
 	static final int UNIT_SIZE = 50;
 	static final int GAME_UNITS = (SCREEN_WIDTH*SCREEN_HEIGHT)/(UNIT_SIZE*UNIT_SIZE);
 	static final int DELAY = 175;
@@ -207,7 +207,7 @@ public class SnakePanel extends JPanel implements ActionListener{
 
 		g.setColor(Color.red);
 
-		g.setFont( new Font("Ink Free",Font.BOLD, 40));
+		g.setFont( new Font("Ink Free",Font.BOLD, 36));
 
 		FontMetrics metrics1 = getFontMetrics(g.getFont());
 
@@ -217,7 +217,7 @@ public class SnakePanel extends JPanel implements ActionListener{
 
 		g.setColor(Color.red);
 
-		g.setFont( new Font("Ink Free",Font.BOLD, 75));
+		g.setFont( new Font("Ink Free",Font.BOLD, 65));
 
 		FontMetrics metrics2 = getFontMetrics(g.getFont());
 
@@ -226,7 +226,7 @@ public class SnakePanel extends JPanel implements ActionListener{
                 
                 g.setColor(Color.red);
 
-		g.setFont( new Font("Ink Free",Font.BOLD, 75));
+		g.setFont( new Font("Ink Free",Font.BOLD, 65));
 
 		FontMetrics metrics3 = getFontMetrics(g.getFont());
 
