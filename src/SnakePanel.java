@@ -120,76 +120,42 @@ public class SnakePanel extends JPanel implements ActionListener{
 		if(x[0] < 0) {
 			running = false;
 		}
-
 		//check if head touches right border
-
 		if(x[0] > SCREEN_WIDTH) {
-
 			running = false;
-
 		}
 
 		//check if head touches top border
-
 		if(y[0] < 0) {
-
 			running = false;
-
 		}
 
 		//check if head touches bottom border
-
 		if(y[0] > SCREEN_HEIGHT) {
-
 			running = false;
-
 		}
-
-		
-
 		if(!running) {
-
 			timer.stop();
-
 		}
-
 	}
-
 	public void gameOver(Graphics g) {
 
-		//Score
-
 		g.setColor(Color.red);
-
 		g.setFont( new Font("Ink Free",Font.BOLD, 36));
-
 		FontMetrics metrics1 = getFontMetrics(g.getFont());
-
 		g.drawString("Score: "+applesEaten, (SCREEN_WIDTH - metrics1.stringWidth("Score: "+applesEaten))/2, g.getFont().getSize());
-
-		//Game Over text
-
+//Game Over text
 		g.setColor(Color.red);
-
 		g.setFont( new Font("Ink Free",Font.BOLD, 65));
-
 		FontMetrics metrics2 = getFontMetrics(g.getFont());
-
 		g.drawString("Game Over", (SCREEN_WIDTH - metrics2.stringWidth("Game Over"))/2, SCREEN_HEIGHT/2);
-                
-                
-                g.setColor(Color.red);
-
+		g.setColor(Color.red);
 		g.setFont( new Font("Ink Free",Font.BOLD, 65));
-
 		FontMetrics metrics3 = getFontMetrics(g.getFont());
-
 		g.drawString("Created by Prince Kumar", (SCREEN_WIDTH - metrics3.stringWidth("Prince Kumar"))/3, SCREEN_HEIGHT/3);
-
 	}
 
 	@Override
-
 	public void actionPerformed(ActionEvent e) {
 
 		
